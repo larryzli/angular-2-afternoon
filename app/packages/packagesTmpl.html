@@ -1,5 +1,5 @@
 <section class="packages-main">
-  <section ng-repeat="package in packages" class="package-card">
+  <section ng-repeat="package in allPackages | filter: country" class="package-card">
     <img ng-src="{{package.image}}" alt="{{package.country}}" />
 
     <h6>
